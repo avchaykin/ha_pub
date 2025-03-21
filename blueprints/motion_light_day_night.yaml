@@ -14,7 +14,12 @@ blueprint:
               domain: binary_sensor
             - device_class: motion
               domain: binary_sensor
-    # day_night_sensor:
+    day_night_sensor:
+      name: Day / Night Sensor
+      selector:
+        entity:
+          filter:
+            - domain: binary_sensor
     light_target_day:
       name: Light at Day
       selector:
